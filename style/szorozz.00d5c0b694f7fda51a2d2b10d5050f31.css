@@ -435,6 +435,12 @@ button {
   font-size: 20px;
   line-height: 28px;
 }
+a {
+  color: #99ffff;
+}
+a:active {
+  color: black;
+}
 hr {
   border: 0;
   border-top: 1px solid #0088cc;
@@ -442,6 +448,9 @@ hr {
 .sz-wrapper {
   margin: 5px 10px;
   text-align: center;
+}
+.sz-wrapper .sz-extra-margin {
+  margin: 5px 20px;
 }
 .sz-count {
   color: #cceeff;
@@ -484,6 +493,7 @@ hr {
   color: #004466;
 }
 .sz-remark {
+  display: inline-block;
   font-size: 14px;
   line-height: 20px;
   color: white;

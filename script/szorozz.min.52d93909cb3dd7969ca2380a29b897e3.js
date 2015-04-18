@@ -758,12 +758,15 @@ var sz;
     var LanguageEnglish = (function () {
         function LanguageEnglish() {
             this.multiply = '×';
-            this.divide = '/';
+            this.divide = '∕';
             this.answerCorrect = 'Correct! Here’s the next one.';
             this.answerIncorrect = 'Wrong. Try again!';
             this.doneButtonLabel = 'Done';
             this.remark = '★ Bookmark me! I work offline, too!';
             this.changeLanguageButtonLabel = 'Magyarul';
+            this.developedBy = 'Developed by:';
+            this.sourceCode = 'Source code:';
+            this.developerName = 'András Parditka';
         }
         return LanguageEnglish;
     })();
@@ -774,12 +777,15 @@ var sz;
     var LanguageHungarian = (function () {
         function LanguageHungarian() {
             this.multiply = '·';
-            this.divide = '/';
+            this.divide = '∕';
             this.answerCorrect = 'Jó válasz! Itt a következő.';
             this.answerIncorrect = 'Hibás. Próbáld újra!';
             this.doneButtonLabel = 'Kész';
             this.remark = '★ Jelölj be kedvencnek! Internet nélkül is működöm!';
             this.changeLanguageButtonLabel = 'English';
+            this.developedBy = 'Fejlesztette:';
+            this.sourceCode = 'Forráskód:';
+            this.developerName = 'Parditka András';
         }
         return LanguageHungarian;
     })();
@@ -865,7 +871,8 @@ var sz;
                 ['div', { 'class': 'sz-wrapper' }, ['span', { 'class': 'sz-feedback', 'data-berek-widget-part': 'feedbackOut' }]],
                 ['hr/'],
                 ['div', { 'class': 'sz-wrapper' }, ['span', { 'class': 'sz-remark' }, sz.Main.getLanguage().remark]],
-                ['div', { 'class': 'sz-wrapper' }, ['button', { 'class': 'sz-button', 'type': 'button', 'data-berek-widget-part': 'changeLanguageButton' }, sz.Main.getLanguage().changeLanguageButtonLabel]]
+                ['div', { 'class': 'sz-wrapper sz-extra-margin' }, ['button', { 'class': 'sz-button', 'type': 'button', 'data-berek-widget-part': 'changeLanguageButton' }, sz.Main.getLanguage().changeLanguageButtonLabel]],
+                ['div', { 'class': 'sz-wrapper' }, ['span', { 'class': 'sz-remark' }, sz.Main.getLanguage().developedBy, ' ', ['a', { 'href': 'https://github.com/andraaspar', 'target': '_blank' }, sz.Main.getLanguage().developerName]], ' ', ['span', { 'class': 'sz-remark' }, sz.Main.getLanguage().sourceCode, ' ', ['a', { 'href': 'https://github.com/andraaspar/szorozz', 'target': '_blank' }, 'GitHub'],]]
             ]));
             this.initParts();
         }
