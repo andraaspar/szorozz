@@ -40,11 +40,11 @@ module sz {
 				],
 				['div', {'class': 'sz-wrapper'},
 					['span', {'class': 'sz-remark'}, Main.getLanguage().developedBy, ' ',
-						['a', {'href': 'https://github.com/andraaspar'}, Main.getLanguage().developerName]
+						['a', {'href': 'https://github.com/andraaspar', 'target': '_blank'}, Main.getLanguage().developerName]
 					],
 					' ',
 					['span', {'class': 'sz-remark'}, Main.getLanguage().sourceCode, ' ',
-						['a', {'href': 'https://github.com/andraaspar/szorozz'}, 'GitHub'],
+						['a', {'href': 'https://github.com/andraaspar/szorozz', 'target': '_blank'}, 'GitHub'],
 					]
 				]
 			]));
