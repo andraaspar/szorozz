@@ -1,6 +1,6 @@
 
 
-module sz.model {
+module sz {
 	export class AppcacheModel extends illa.EventHandler {
 		
 		static EVENT_READY = 'sz_model_AppcacheModel_EVENT_READY';

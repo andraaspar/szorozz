@@ -1,4 +1,93 @@
-html, body
+@import (inline) 'normalize.css';
+
+@BLUE: #00aaff;
+@RADIUS: 3px;
+
+html,
+body
 {
-	background: #aaa;
+	background-color: mix(@BLUE, white, 80%);
+}
+
+body,
+input,
+button
+{
+	font-size: 20px;
+	line-height: 28px;
+}
+
+hr
+{
+	border: 0;
+	border-top: 1px solid mix(@BLUE, black, 80%);
+}
+
+.sz-wrapper
+{
+	margin: 5px 10px;
+	text-align: center;
+}
+
+.sz-count
+{
+	color: mix(@BLUE, white, 20%);
+}
+
+.sz-question
+{
+	font-weight: bold;
+}
+
+.sz-button
+{
+	border: 1px solid mix(@BLUE, black, 80%);
+	padding: 5px 10px;
+	background: linear-gradient(to bottom, mix(@BLUE, white, 0%), mix(@BLUE, white, 20%));
+	border-radius: @RADIUS;
+	outline: 0;
+	transition-property: border-color, background-color, color;
+	transition-duration: .25s;
+	box-shadow: 0 0 0 1px mix(@BLUE, white, 60%);
+	
+	&:active
+	{
+		background: linear-gradient(to bottom, mix(@BLUE, black, 80%), mix(@BLUE, black, 100%));
+		color: white;
+		transition: none;
+	}
+	
+	&:focus
+	{
+		border-color: mix(@BLUE, black, 40%);
+	}
+}
+
+.sz-input
+{
+	border: 1px solid mix(@BLUE, black, 80%);
+	padding: 5px 10px;
+	width: 120px;
+	border-radius: @RADIUS;
+	background: white;
+	outline: 0;
+	box-shadow: 0 0 0 1px mix(@BLUE, white, 60%);
+	
+	&:focus
+	{
+		border-color: mix(@BLUE, black, 40%);
+	}
+}
+
+.sz-feedback
+{
+	font-style: italic;
+	color: mix(@BLUE, black, 40%);
+}
+
+.sz-remark
+{
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
 }
