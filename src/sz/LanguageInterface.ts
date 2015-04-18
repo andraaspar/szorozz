@@ -9,5 +9,8 @@ module sz {
 		doneButtonLabel: string;
 		remark: string;
 		changeLanguageButtonLabel: string;
+		developedBy: string;
+		sourceCode: string;
+		developerName: string;
 	}
 }

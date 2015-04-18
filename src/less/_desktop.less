@@ -1,5 +1,6 @@
 @import (inline) 'normalize.css';
 
+@CYAN: #00ffff;
 @BLUE: #00aaff;
 @RADIUS: 3px;
 
@@ -17,6 +18,16 @@ button
 	line-height: 28px;
 }
 
+a
+{
+	color: mix(@CYAN, white, 40%);
+	
+	&:active
+	{
+		color: black;
+	}
+}
+
 hr
 {
 	border: 0;
@@ -27,6 +38,11 @@ hr
 {
 	margin: 5px 10px;
 	text-align: center;
+	
+	.sz-extra-margin
+	{
+		margin: 5px 20px;
+	}
 }
 
 .sz-count
@@ -87,6 +103,7 @@ hr
 
 .sz-remark
 {
+	display: inline-block;
 	font-size: 14px;
 	line-height: 20px;
 	color: white;

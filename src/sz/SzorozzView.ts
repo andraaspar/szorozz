@@ -33,9 +33,18 @@ module sz {
 				['div', {'class': 'sz-wrapper'},
 					['span', {'class': 'sz-remark'}, Main.getLanguage().remark]
 				],
-				['div', {'class': 'sz-wrapper'},
+				['div', {'class': 'sz-wrapper sz-extra-margin'},
 					['button', {'class': 'sz-button', 'type': 'button', 'data-berek-widget-part': 'changeLanguageButton'},
 						Main.getLanguage().changeLanguageButtonLabel
+					]
+				],
+				['div', {'class': 'sz-wrapper'},
+					['span', {'class': 'sz-remark'}, Main.getLanguage().developedBy, ' ',
+						['a', {'href': 'https://github.com/andraaspar'}, Main.getLanguage().developerName]
+					],
+					' ',
+					['span', {'class': 'sz-remark'}, Main.getLanguage().sourceCode, ' ',
+						['a', {'href': 'https://github.com/andraaspar/szorozz'}, 'GitHub'],
 					]
 				]
 			]));
